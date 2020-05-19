@@ -55,7 +55,12 @@ function ImagesPanel({ images, addImage, clearImages }) {
         <i style={{ fontSize: "150px" }} className="fa fa-picture-o"></i>
       ) : (
         <img
-          style={{ maxHeight: "100%", maxWidth: "100%" }}
+          style={{
+            display: "block",
+            maxHeight: "100%",
+            maxWidth: "100%",
+            objectFit: "contain",
+          }}
           src={images[0]}
         ></img>
       )}

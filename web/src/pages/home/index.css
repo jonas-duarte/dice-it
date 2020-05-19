@@ -71,6 +71,8 @@
     width: 100%;
     height: 50%;
     border: none;
+  }
+  .actionsLog {
     border-top: 2px solid white;
   }
 }
