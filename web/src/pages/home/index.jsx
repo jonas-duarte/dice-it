@@ -31,7 +31,7 @@ class Home extends Component {
         setTimeout(tryToReconnect, 1000);
       };
       tryToReconnect();
-    }, 2000);
+    }, 10000);
 
     this.ws.onopen = () => {
       // TODO: LOAD DATA FROM BACKEND
