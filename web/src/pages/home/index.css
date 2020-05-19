@@ -1,0 +1,76 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+.mainPanel {
+  height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board {
+  max-height: 100%;
+  width: calc(100% - 400px);
+}
+
+.actions {
+  height: 98px;
+  width: 100%;
+  display: flex;
+  border-top: 2px solid white;
+}
+
+.actions > button {
+  font-family: "Pangolin", cursive;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  outline: none;
+}
+
+.actions > button:hover {
+  background-color: #444444;
+}
+
+.actionsLog {
+  height: 100%;
+  width: 398px;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  border-left: 2px solid white;
+}
+
+.actionsLog > div:first-child {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.character {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.character > form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .board,
+  .actionsLog {
+    width: 100%;
+    height: 50%;
+    border: none;
+    border-top: 2px solid white;
+  }
+}
