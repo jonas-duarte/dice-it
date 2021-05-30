@@ -12,6 +12,6 @@
   "description": "",
   "dependencies": {
     "mongodb": "^3.5.5",
-    "ws": "^7.3.0"
+    "ws": "^7.4.6"
   }
 }
